@@ -1,18 +1,14 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <h1 style="margin-bottom : 2em">Temperature Converter</h1>
+    <CelsiusToFahrenheitVue />
+    <FahrenheitToCelsiusVue />
+    <CelsiusToKelvinVue />
   </div>
 </template>
 
-<script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
-
-export default {
-  name: 'HomeView',
-  components: {
-    HelloWorld
-  }
-}
+<script setup>
+  import CelsiusToKelvinVue from '@/components/temperature/CelsiusToKelvin.vue';
+  import FahrenheitToCelsiusVue from '@/components/temperature/FahrenheitToCelsius.vue';
+  import CelsiusToFahrenheitVue from '@/components/temperature/CelsiusToFahrenheit.vue';
 </script>
